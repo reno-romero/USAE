@@ -1,0 +1,86 @@
+body
+{
+	border: 2px red solid;
+	background: url('../img/wall/fabric_1.png');
+	margin: 0 auto;
+	max-width: 1200px;
+}
+footer
+{
+	background: #111;
+	color: #4c4c4c;
+	font-weight: bold;
+	padding: 1em 0 1em 3em;
+	margin-top: 2em;
+	max-width: 1200px;
+}
+header
+{
+	position: relative;
+}
+header figure, header nav
+{
+	display: inline-block;
+	vertical-align: top;
+}
+header nav ul
+{
+	list-style: none;
+	margin: 2em 0 0 9em;
+	padding: 0;
+}
+header nav ul li
+{
+	color: #4c4c4c;
+	display: inline-block;
+	margin: 1em 0 0 2em;
+	padding: .25em .5em;
+}
+header nav ul li#contacto
+{
+	background: rgba(204,51,153,.7);
+	left: -8em;
+	position: relative;
+	top: 4em;
+}
+header nav ul li a
+{
+	color: #4c4c4c;	
+	text-decoration: none;
+}
+header #titulos
+{
+	border-radius: 10px; 
+	height: 20em;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 75%;
+}
+header #titulos h1
+{
+	background: #F08E3C;
+	color: white;
+	left: 7em;
+	opacity: .8;
+	padding: 1.5em 2em;
+	position: absolute;
+	top: 5em;
+	width: 15%;
+}
+header #titulos h3
+{
+	background: #999;
+	color: #222;
+	left: 17em;
+	opacity: .8;
+	padding: 1em 1.5em;
+	position: absolute;
+	top: 16em;
+	width: 15%;
+}
+header #titulos #img-principal img
+{	
+	display: block;
+	opacity: .8;
+	width: 100%;
+}
