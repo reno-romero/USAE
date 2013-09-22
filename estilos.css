@@ -8,7 +8,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 1200px){
 	body
 	{
 		background: #21374C;surl("../img/wall/paper_1.png");
@@ -62,21 +62,25 @@
 		margin: 0em;
 		display: inline-block;
 		padding: 0em;
+		z-index: 1;
 	}
 	header #titulos
 	{
-		float: right;
+		left: 0;
 		margin: 0em 5em 25em 0em;
 		padding: 0;
-		width: 50%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
 	}
 	header #titulos h1
 	{
 		background: #F08E3C;
 		color: #fff;
-		margin: 0;
+		margin: 0 0 0 4em;
 		opacity: .8;
-		padding: 1.5em 2em;
+		padding: 2em 2em;
 	}
 	header #titulos h1:after
 	{
@@ -88,9 +92,12 @@
 		background: #333;
 		color: #c3c3c3;
 		font-style: italic;
+		left: 10em;
 		margin: 0;
-		padding: .5em 1em .5em 0;
+		padding: .25em 1em .5em 1em;
+		position: relative;
 		text-align: left;
+		top: -3em;
 	}
 	header #titulos #img-principal
 	{
