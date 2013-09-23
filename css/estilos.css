@@ -8,49 +8,58 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 1200px){
 	body
 	{
-		background: #21374C;surl("../img/wall/paper_1.png");
-	}
+		background: #white;url("../img/wall/paper_1.png");
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		font-family: helvetica;
+	}	
 	footer
 	{
-		clear: both;
+		background: #333;
+		color: #ccc;
+		margin: 0;
+		padding: 2em;
+		position: absolute;
+		text-align: center;
+		width: 90%;
 	}
 	header
 	{
-		margin: 0 auto;
-		padding: 0;
-		position: relative;
+		margin: 0 0 3em 0;
+		padding: 0;		
 		width: 100%;
-	}
-	figure, nav, hgroup, header
-	{
-		borsder: 2px red solid;
 	}
 	header nav
 	{
+		border: 2px green solid;
 		bottom-right: 0em;
 		left: 0em;
 		margin-top: 2em;
-		position: absolute;
+		padding: 0;		
 		width: 100%;
 	}
 	header nav ul
 	{
-		list-style: none;
+		border: 2px blue solid;
+		list-style: none;	
+		margin: 0;
+		padding: 0;	
 		width: 100%;
 	}
 	header nav ul li
 	{
-		background: #E6007E;
+		background: #21374C;
 		display: block;
 		font-size: 1.5em;
-		margin-bottom: .25em;
+		margin-bottom: .045em;
 		opacity: .8;
 		padding: .5em;
 		text-align: center;
-		width: 80%;
+		width: 96%;
 	}
 	header nav li a
 	{
@@ -62,21 +71,25 @@
 		margin: 0em;
 		display: inline-block;
 		padding: 0em;
+		z-index: 1;
 	}
 	header #titulos
 	{
-		float: right;
+		left: 0;
 		margin: 0em 5em 25em 0em;
 		padding: 0;
-		width: 50%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
 	}
 	header #titulos h1
 	{
 		background: #F08E3C;
 		color: #fff;
-		margin: 0;
+		margin: 0 0 0 4em;
 		opacity: .8;
-		padding: 1.5em 2em;
+		padding: .75em 2em 2.75em 5em;
 	}
 	header #titulos h1:after
 	{
@@ -85,17 +98,204 @@
 	}
 	header #titulos h3
 	{
-		background: #333;
+		background: #1B58A1;
 		color: #c3c3c3;
 		font-style: italic;
+		left: 10em;
 		margin: 0;
-		padding: .5em 1em .5em 0;
+		opacity: .8;
+		padding: .25em 1em .5em 1em;
+		position: relative;
 		text-align: left;
+		top: -3em;
+		width: 63%;
 	}
 	header #titulos #img-principal
 	{
 		display: none;
 		
+	}
+	#contenido
+	{
+		width: 95%;
+	}
+	#contenido #control
+	{
+		background: #cc4037;
+		color: #999;
+	}
+	#contenido #control h4, #contenido #control #logo
+	{
+		background: #fff;
+	}
+	#contenido #control h4, #contenido #control .subtitulos
+	{
+		background: #000;
+		color: #fff;
+	}
+	#contenido #control h4, #contenido #control .tabla
+	{
+		background: #000;
+	}
+	#contenido #control h4, #contenido #control .tabla td
+	{
+		border-bottom: 1px #4c0d09 solid;
+	}
+	#contenido #control p.procesos
+	{
+		color: #eee;
+	}
+	#contenido #eficiencia
+	{
+		background: #ffc19f;
+		color: #222;
+	}
+	#contenido #eficiencia h4, #contenido #eficiencia #logo
+	{
+		background: #fff;
+	}
+	#contenido #eficiencia h4, #contenido #eficiencia .subtitulos
+	{
+		background: #fff;
+		color: #cc4037;
+	}
+	#contenido #eficiencia h4, #contenido #eficiencia .tabla
+	{
+		background: #cc4037;
+		color: #222;
+	}
+	#contenido #eficiencia h4, #contenido #eficiencia .tabla td
+	{
+		border-bottom: 1px #ffc19f solid;
+	}
+	#contenido #eficiencia p.procesos
+	{
+		color: #000;
+	}
+	#contenido #informatica
+	{
+		background: #fff8c9;
+		color: #222;
+	}
+	#contenido #informatica h4, #contenido #informatica #logo
+	{
+		background: #000;
+	}
+	#contenido #informatica .subtitulos
+	{
+		background: #000;		
+		color: #fff;
+	}
+	#contenido #informatica h4, #contenido #informatica .tabla
+	{
+		background: #2d2700;
+		color: #fff8c9;
+	}
+	#contenido #informatica h4, #contenido #informatica .tabla td
+	{
+		border-bottom: 1px #fff8c9 solid;
+	}
+	#contenido #informatica p.procesos
+	{
+		color: #eee;
+	}
+	#contenido #jefatura
+	{
+		background: #4c0d09;
+		color: #000;
+	}
+	#contenido #jefatura h4, #contenido #jefatura #logo
+	{
+		background: #fff;
+	}
+	#contenido #jefatura h4, #contenido #jefatura .subtitulos
+	{
+		background: #fff;
+	}
+	#contenido #jefatura h4, #contenido #jefatura .tabla
+	{
+		background: #d3b2af;
+		color: #000;
+	}
+	#contenido #jefatura h4, #contenido #jefatura .tabla td
+	{
+		border-bottom: 1px #4c0d09 solid;
+	}
+	#contenido #jefatura p.procesos
+	{
+		color: #eee;
+	}
+	#contenido #servicio
+	{
+		background: #348FD4;
+		color: #222;
+	}
+	#contenido #servicio h4, #contenido #servicio #logo
+	{
+		background: #06406c;
+	}
+	#contenido #servicio h4, #contenido #servicio .subtitulos
+	{
+		background: #06406c;
+		color: #fff;
+	}
+	#contenido #servicio h4, #contenido #servicio .tabla
+	{
+		background: #06406c;
+	}
+	#contenido #servicio h4, #contenido #servicio .tabla td
+	{
+		border-bottom: 1px #348FD4 solid;
+	}
+	#contenido #servicio p.procesos
+	{
+		color: #eee;
+	}
+	#contenido .departamentos
+	{
+		padding: 1em;
+		position: relative;
+		width: 100%;
+	}
+	#contenido .departamentos h4
+	{
+		border-radius: 5px;
+		padding: .3em;
+		width: 35%;
+	}
+	#contenido .departamentos p
+	{
+		border-radius: 5px;
+		margin: 0 0 6em 0;
+		padding: .3em;
+		width: 40%;
+	}
+	#contenido .departamentos p.procesos
+	{
+		background: none;
+		padding: 0;
+		margin: 1em 0;		
+	}
+	#contenido .departamentos #logo
+	{
+		border-radius: 5px;
+		height: 146px;
+		padding: .3em;
+		right: 3em;
+		position: absolute;
+		top: 2em;
+		width: 155px;
+	}
+	#contenido .departamentos .tabla
+	{
+		border-radius: 5px;
+		color: rgba(211, 178, 175,.9);
+		margin-bottom: 5em;
+		padding: .5em;
+	}
+	#contenido .departamentos .tabla td
+	{
+			padding: .5em .5em .25em .25em;
 	}
 }
 
