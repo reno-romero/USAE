@@ -8,67 +8,91 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 768px){
 	body
 	{
-		background: #white;url("../img/wall/paper_1.png");
+		background: white;		
+		font-family: helvetica;
 		padding: 0;
 		margin: 0;
 		width: 100%;
-		font-family: helvetica;
 	}	
 	footer
 	{
 		background: #333;
 		color: #ccc;
 		margin: 0;
-		padding: 2em;
-		position: absolute;
+		padding:.25em 0;
 		text-align: center;
-		width: 90%;
+		width: 100%;
+	}
+	footer #tel:before
+	{
+		content: "\f095";
+		font-family: "icomoon";
+		margin-right: .5em;
+	}
+	footer #dir:before
+	{
+		content: "\e004";
+		font-family: "icomoon";
+		margin-right: .5em;
+	}
+	footer #ciudad:before
+	{
+		content: "\e006";
+		font-family: "icomoon";
+		margin-right: .5em;
+	}
+	footer #git a
+	{
+		text-decoration: none;
+		font-size: 1.5em;
+	}
+	footer #git a:before
+	{
+		color: #777;
+		content: "\f09b";
+		font-family: "icomoon";
+		margin-right: .5em;
 	}
 	header
 	{
-		margin: 0 0 3em 0;
-		padding: 0;		
-		width: 100%;
+		margin: 0;
+		padding: 0;	
 	}
 	header nav
 	{
-		border: 2px green solid;
 		bottom-right: 0em;
 		left: 0em;
-		margin-top: 2em;
-		padding: 0;		
-		width: 100%;
+		margin-top: 2.5em;
+		padding: 0;	
 	}
 	header nav ul
 	{
-		border: 2px blue solid;
 		list-style: none;	
 		margin: 0;
 		padding: 0;	
-		width: 100%;
 	}
 	header nav ul li
 	{
+		border-bottom: 1px #ccc solid;
 		background: #21374C;
-		display: block;
-		font-size: 1.5em;
-		margin-bottom: .045em;
+		font-size: 1.7em;
+		margin: 0 auto;
 		opacity: .8;
-		padding: .5em;
+		padding: .5em 0;
 		text-align: center;
-		width: 96%;
+		width: 100%;
 	}
 	header nav li a
 	{
-		color: #ccc;
+		color: rgba(252,252,252,.9) ;
 		text-decoration: none;
 	}
 	header #logo
 	{
-		margin: 0em;
+		margin: .25em 0;
 		display: inline-block;
 		padding: 0em;
 		z-index: 1;
@@ -76,7 +100,6 @@
 	header #titulos
 	{
 		left: 0;
-		margin: 0em 5em 25em 0em;
 		padding: 0;
 		position: absolute;
 		top: 0;
@@ -87,28 +110,27 @@
 	{
 		background: #F08E3C;
 		color: #fff;
-		margin: 0 0 0 4em;
+		font-size: 3em;
+		margin:0 auto;
 		opacity: .8;
-		padding: .75em 2em 2.75em 5em;
+		padding: 1em 0 1em 0;
+		text-align: center;
 	}
 	header #titulos h1:after
 	{
-		content: "\e000";
+		content: "\e005";
 		font-family: "icomoon";
 	}
 	header #titulos h3
 	{
 		background: #1B58A1;
-		color: #c3c3c3;
+		color: #fff;
 		font-style: italic;
-		left: 10em;
 		margin: 0;
-		opacity: .8;
-		padding: .25em 1em .5em 1em;
-		position: relative;
-		text-align: left;
-		top: -3em;
-		width: 63%;
+		opacity: .9;
+		padding: .25em 0;
+		text-align: right;
+		width: 100%;
 	}
 	header #titulos #img-principal
 	{
