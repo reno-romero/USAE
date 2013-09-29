@@ -8,7 +8,19 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@media screen and (max-width: 768px){
+@font-face {
+	font-family: 'arrows';
+	src:url('../fonts/arrows/icomoon.eot');
+	src:url('../fonts/arrows/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/arrows/icomoon.woff') format('woff'),
+		url('../fonts/arrows/icomoon.ttf') format('truetype'),
+		url('../fonts/arrows/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*320 480 540 640 720 768 1080 1920* medidas de pantallas de celulares*/
+/*320,480(moviles) 768,1024(tablets) 1680 (web)*/
+
 	body
 	{
 		background: white;		
@@ -24,7 +36,7 @@
 		color: #ccc;
 		left: 0;
 		margin: 0;
-		padding: .55em 0;
+		padding: .5em 0;
 		position: relative;
 		text-align: center;
 		width: 100%;
@@ -51,7 +63,7 @@
 	footer #ciudad
 	{
 
-		margin-bottom: 2.745em;
+		margin-bottom: 1.5em;
 	}
 	footer #git a
 	{
@@ -72,8 +84,6 @@
 	}
 	header nav
 	{
-		bottom-right: 0em;
-		left: 0em;
 		margin-top: 1.75em;
 		padding: 0;	
 	}
@@ -88,11 +98,15 @@
 		border-bottom: 1px #ccc solid;
 		background: #21374C;
 		font-size: 1.7em;
-		margin: 0 auto;
+		margin: 0;
 		opacity: .8;
 		padding: .5em 0;
 		text-align: center;
 		width: 100%;
+	}
+	header nav ul li.externos
+	{
+		background: #cc3399;
 	}
 	header nav li a
 	{
@@ -120,10 +134,10 @@
 		background: #F08E3C;
 		color: #fff;
 		float: right;
-		font-size: 3em;
+		font-size: 1.75em;
 		margin: 0;
 		opacity: .8;
-		padding: 1em .5em .75em .5em;
+		padding: 1.5em .5em 1.5em .5em;
 		text-align: center;
 		width: 50%;
 	}
@@ -139,9 +153,10 @@
 		color: #fff;	
 		float: right;	
 		font-style: italic;
+		font-size: 1em;
 		margin: 0;
 		opacity: .9;
-		padding: .2em .25em;
+		padding: .25em .25em;
 		text-align: right;
 		width: 45%;
 	}
@@ -156,7 +171,17 @@
 	}
 	#contenido
 	{
-		margin-top: 1.5em;
+		width: 100%;
+	}
+	#contenido h4, #contenido_organigrama h4, #contenido_valores h4
+	{
+		background: #444;
+		color: #fff;
+		font-size: 1.25em;
+		margin: 0;
+		padding: .5em 0;
+		position: relative;
+		text-align: center;
 		width: 100%;
 	}
 	#contenido tr
@@ -166,74 +191,74 @@
 	}
 	#contenido #control
 	{
-		background: #cc4037;
-		color: #999;
-	}
-	#contenido #control h4, #contenido #control #logo
-	{
-		background: #fff;
+		background: #F7A17E;
 	}
 	#contenido #control h4, #contenido #control .subtitulos
 	{
-		background: #111;
-		color: #fff;
+		background: #00A5D1;
+		color: #222;
 	}
 	#contenido #control h4, #contenido #control .tabla
 	{
-		background: #111;
+		background: #00A5D1;
 	}
 	#contenido #control h4, #contenido #control .tabla td
 	{
-		border-bottom: 1px #4c0d09 solid;
+		border-bottom: 1px #F7A17E solid;
+		color: #222;
 	}
 	#contenido #control p.procesos
 	{
-		color: #eee;
+		color: #fff;
+	}
+	#contenido #control #logo
+	{
+		background: #fff;
 	}
 	#contenido #eficiencia
 	{
-		background: #ffc19f;
+		background: #2A5864;
 		color: #222;
-	}
-	#contenido #eficiencia h4, #contenido #eficiencia #logo
-	{
-		background: #fff;
 	}
 	#contenido #eficiencia h4, #contenido #eficiencia .subtitulos
 	{
-		background: #fff;
-		color: #cc4037;
+		background: #E6C17B;
+		color: #222;
 	}
 	#contenido #eficiencia h4, #contenido #eficiencia .tabla
 	{
-		background: #cc4037;
+		background: #E6C17B;
 		color: #222;
 	}
 	#contenido #eficiencia h4, #contenido #eficiencia .tabla td
 	{
-		border-bottom: 1px #ffc19f solid;
+		border-bottom: 1px #2A5864 solid;
 	}
 	#contenido #eficiencia p.procesos
 	{
-		color: #000;
+		color: #fff;
+	}
+	#contenido #eficiencia #logo
+	{
+		background: #fff;
 	}
 	#contenido #informatica
 	{
-		background: #fff8c9;
+		background: #EC914A;
 		color: #222;
 	}
-	#contenido #informatica h4, #contenido #informatica #logo
+	#contenido #informatica #logo
 	{
-		background: #000;
+		background: #fff;
 	}
 	#contenido #informatica .subtitulos
 	{
-		background: #000;		
+		background: #2A5864;		
 		color: #fff;
 	}
 	#contenido #informatica h4, #contenido #informatica .tabla
 	{
-		background: #2d2700;
+		background: #2A5864;
 		color: #fff8c9;
 	}
 	#contenido #informatica h4, #contenido #informatica .tabla td
@@ -242,97 +267,79 @@
 	}
 	#contenido #informatica p.procesos
 	{
-		color: #eee;
+		color: #fff;
 	}
 	#contenido #jefatura
 	{
-		background: #4c0d09;
-		color: #000;
-	}
-	#contenido #jefatura h4, #contenido #jefatura #logo
-	{
-		background: #fff;
+		background: #06406c;
 	}
 	#contenido #jefatura h4, #contenido #jefatura .subtitulos
 	{
-		background: #fff;
+		background: #348FD4;
+		color: #fff;
 	}
 	#contenido #jefatura h4, #contenido #jefatura .tabla
 	{
-		background: #d3b2af;
-		color: #000;
+		background: #348FD4;
+		color: #fff;
 	}
 	#contenido #jefatura h4, #contenido #jefatura .tabla td
 	{
-		border-bottom: 1px #4c0d09 solid;
+		border-bottom: 1px #06406c solid;
 	}
 	#contenido #jefatura p.procesos
 	{
 		color: #eee;
-	}
-	#contenido #servicio
+	}	
+	#contenido #jefatura #logo
 	{
-		background: #348FD4;
-		color: #222;
+		background: #fff;
 	}
-	#contenido #servicio h4, #contenido #servicio #logo
+	#contenido #regresar, #contenido_organigrama #regresar, #contenido_valores #regresar
 	{
-		background: #06406c;
-	}
-	#contenido #servicio h4, #contenido #servicio .subtitulos
-	{
-		background: #06406c;
-		color: #fff;
-	}
-	#contenido #servicio h4, #contenido #servicio .tabla
-	{
-		background: #06406c;
-	}
-	#contenido #servicio h4, #contenido #servicio .tabla td
-	{
-		border-bottom: 1px #348FD4 solid;
-	}
-	#contenido #servicio p.procesos
-	{
-		color: #eee;
-	}
-	#contenido .descarga
-	{
-		background: #ccc;
-		padding: 0 0 .5em 0;
-		width: 100%;
-	}
-	#contenido .descarga a
-	{
-		color: rgba(230,0,126,.6);
-		font-size: .75em;
-		text-decoration: none;
-	}
-	#contenido .descarga a:after
-	{
-		font-family: "icomoon";
-		content: "\e002";
-		padding-left: 1em; 
-	}
-	#contenido .descarga h4
-	{
-		background: #222;
-		color: #eee;
-		font-size: 1.25em;
+		background: #333;
+		padding: .5em;
 		margin: 0;
-		opacity: .8;
-		padding: .5em 0;
 		text-align: center;
 		width: 100%;
 	}
-	#contenido .descarga p.titulos_descargas
+	#contenido #regresar a, #contenido_organigrama #regresar a, #contenido_valores #regresar a
 	{
-		background: rgba(6,64,108,.6);
-		border-radius: 5px;
 		color: #fff;
-		margin: 2em 0 1em 1em; 
-		padding: .25em 1em;
-		width: 75%;
+		font-size: 1.5em;
+		text-decoration: none;
+	}
+	#contenido #regresar a:before, #contenido_organigrama #regresar a:before, #contenido_valores #regresar a:before
+	{
+		content: "\e003";
+		font-family: "arrows";
+	}
+	#contenido #servicio
+	{
+		background: #FF451A;
+		color: #222;
+	}
+	#contenido #servicio h4, #contenido #servicio .subtitulos
+	{
+		background: #9CA376;
+		color: #222;
+	}
+	#contenido #servicio h4, #contenido #servicio .tabla
+	{
+		background: #9CA376;
+		color: #222;
+	}
+	#contenido #servicio h4, #contenido #servicio .tabla td
+	{
+		border-bottom: 1px #FF451A solid;
+	}
+	#contenido #servicio p.procesos
+	{
+		color: #fff;
+	}
+	#contenido #servicio #logo
+	{
+		background: #fff;
 	}
 	#contenido .departamentos
 	{
@@ -341,16 +348,16 @@
 	}
 	#contenido .departamentos h4
 	{
-		border-radius: 5px;
-		padding: .3em;
-		width: 35%;
+		margin: 0 0 .5em 0;
+		padding: .25em;
+		text-align: center;
+		width: 100%;
 	}
 	#contenido .departamentos p
 	{
-		border-radius: 5px;
-		margin: 0 0 6em 0;
+		margin: 0 0 2em 0;
 		padding: .3em;
-		width: 40%;
+		width: 100%;
 	}
 	#contenido .departamentos p.procesos
 	{
@@ -361,29 +368,89 @@
 	#contenido .departamentos #logo
 	{
 		border-radius: 5px;
-		height: 146px;
-		padding: .3em;
-		right: 3em;
-		position: absolute;
-		top: 2em;
+		margin: 0 auto;
+		padding: .3em;		
 		width: 155px;
 	}
 	#contenido .departamentos .tabla
 	{
 		border-radius: 5px;
 		color: rgba(211, 178, 175,.9);
+		margin: 0 auto;
 		margin-bottom: 5em;
-		padding: .5em;
+		padding: .1em;
+		font-size: .85em;
+		width: 93%;
 	}
 	#contenido .departamentos .tabla td
 	{
 			padding: .5em .5em .25em .25em;
 	}
+	#contenido .descarga, #contenido_tramites .descarga
+	{
+		background: #ccc;
+		margin: 0;
+		padding: .5em 0 .5em 0;
+		width: 100%;
+	}
+	#contenido .descarga .formatos a, #contenido_tramites .descarga .formatos a
+	{
+		color: rgba(230,0,126,.6);
+		font-size: .75em;
+		text-decoration: none;
+	}
+	#contenido .descarga .formatos a:after, #contenido_tramites .descarga .formatos a:after
+	{
+		font-family: "icomoon";
+		content: "\e002";
+		padding-left: 1em; 
+	}
+	#contenido .descarga h4, #contenido_tramites #contenido .descarga h4
+	{
+		background: #222;
+		color: #eee;
+		font-size: 1.25em;
+		margin: 0;
+		opacity: .8;
+		padding: .5em 0;
+		text-align: center;
+		width: 100%;
+	}
+	#contenido .descarga #regresar, #contenido_tramites .descarga #regresar
+	{
+		background: #333;
+		color: #fff;
+		display: block;
+		padding:.5em 0;
+		margin: 0;
+		text-align: center;
+		width: 100%;
+	}
+	#contenido .descarga p#regresar a, #contenido_tramites .descarga p#regresar a
+	{
+		color: #fff;
+		font-size: 1.5em;
+		text-decoration: none;
+	}	
+	#contenido .descarga #regresar a:before
+	{
+		content: "\e003";
+		font-family: "arrows";
+	}
+	#contenido .descarga p.titulos_descargas, #contenido_tramites .descarga p.titulos_descargas
+	{
+		background: rgba(6,64,108,.6);
+		border-radius: 5px;
+		color: #fff;
+		margin: 2em 0 1em 1em; 
+		padding: .25em 1em;
+		width: 75%;
+	}
 	#contenido_valores
 	{
 		background: #222;
 		color: #c9c9c9;
-		margin: 1.75em 0 0 0;
+		margin: 0;
 		padding: 1.5em 2em 2em 2em;
 	}
 	#contenido_valores div
@@ -396,92 +463,192 @@
 		color: #009FE3;
 		font-size: 1.25em;
 	}
+	#departamentos, #valores,#texto_organigrama, #texto_tramites
+	{
+		background: #222;
+		color: #fff;
+		font-size: 1.7em;
+		padding: .5em 0;
+		margin: 0;	
+		text-align: center;
+		width: 100%;
+	}
+	#regresar
+	{
+		background: #444;
+		margin: 0;	
+		margin-top: 1.75em;
+		padding: .5em 0;
+		text-align: center;		
+		width: 100%;
+	}
+	#regresar a
+	{		
+		color: #fff;
+		font-size: 1.5em;
+		text-decoration: none;
+	}
+	#regresar a:after
+	{
+		content: "\e003";
+		font-family: "arrows";
+	}
+/***************************************************************/
+/*320 480 540 640 720 768 1080 1920* medidas de pantallas de celulares*/
+/*320,480(moviles) 768,1024(tablets) 1680 (web)*/
+
+	/**************************hasta aqui ***********************************/
+@media screen and (min-width: 768px){
+
+	body	
+	{
+		margin: 0 auto;
+		max-width: 1200px;
+	}	
+	header
+	{
+		margin: 0;
+		padding: 0;
+	}
+	header nav
+	{
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+	}
+	header ul
+	{
+		background: #21374C;
+		border-bottom: 1px #999 solid;
+		clear: both;
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+	}
+	header nav ul li
+	{
+		border: none;
+		display: inline-block;
+		font-size: 1em;
+		font-weight: bold;
+		margin: 0 .05em;
+		padding: 1em .2em;
+		vertical-align: middle;
+		width: 16%;
+	}
+	header nav ul li.externos
+	{
+		background: #21374C;
+		padding: 1em 0;
+		margin: 0;
+		width: 13%;
+	}
+	header nav ul li.externos a
+	{
+
+		color: #F08E3C;
+	}
+	header hgroup#titulos h1
+	{
+		font-size: 3em;
+		margin: 2em 0 0 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	header hgroup#titulos h3
+	{
+		font-size: 1.5em;
+		padding: .25em;
+		position: absolute;
+		right: 0;	
+		text-align: left;
+		top: 12.5em;
+	}
+	header hgroup#titulos #img-principal
+	{
+		display: block;		
+		margin: 0;
+		padding: 0;
+		position: relative;		
+	}
+	header hgroup#titulos #img-principal img
+	{
+		height: 550px;
+		width: 100%;
+	}
+	header #logo
+	{
+		display: block;
+		margin: 0;	
+		position: absolute;
+		width: 10%;
+	}
+	header #titulos
+	{
+		margin: 0;	
+		padding: 0;
+		position: relative;	
+		width: 100%;
+	}	
+	h4.subtitulos
+	{
+		font-size: 1.75em;
+	}
+	p, #regresar
+	{
+		font-size: 1.5em;
+	}
+	table
+	{
+		font-size: 1.25em;
+	}
+	#contenido .departamentos
+	{
+		padding: 5em;
+		position: relative;
+	}
+	#contenido .departamentos h4
+	{
+		border-radius: 5px;
+		font-size: 2em;
+		margin: 0; 
+		padding: .3em .2em;
+		top: -1em;
+		width: 50%;
+	}
+	#contenido .departamentos p
+	{
+		border-radius: 5px;
+		font-size: 1.2em;
+		margin: 0 0 5em 0;
+		padding: .5em .5em;
+		width: 55%;
+	}
+	#contenido .departamentos p.procesos
+	{
+		background: none;
+		font-size: 1em;
+		padding: 0;
+		margin: 1em 0;		
+	}
+	#contenido .departamentos #logo
+	{
+		border-radius: 5px;
+		height: 146px;
+		padding: .3em;
+		right: 7em;
+		position: absolute;
+		top: 2em;
+		width: 155px;
+	}
+	#contenido .descarga .formatos p a
+	{
+		font-size: 1em;
+	}
+}
+@media screen and (min-width: 1025){
+
 }
 
-
-/*body
-{
-	border: 2px red solid;
-	background: url('../img/wall/fabric_1.png');
-	margin: 0 auto;
-	max-width: 1200px;
-}
-footer
-{
-	background: #111;
-	color: #4c4c4c;
-	font-weight: bold;
-	padding: 1em 0 1em 3em;
-	margin-top: 2em;
-	max-width: 1200px;
-}
-header
-{
-	position: relative;
-}
-header figure, header nav
-{
-	display: inline-block;
-	vertical-align: top;
-}
-header nav ul
-{
-	list-style: none;
-	margin: 2em 0 0 9em;
-	padding: 0;
-}
-header nav ul li
-{
-	color: #4c4c4c;
-	display: inline-block;
-	margin: 1em 0 0 2em;
-	padding: .25em .5em;
-}
-header nav ul li#contacto
-{
-	background: rgba(204,51,153,.7);
-	left: -8em;
-	position: relative;
-	top: 4em;
-}
-header nav ul li a
-{
-	color: #4c4c4c;	
-	text-decoration: none;
-}
-header #titulos
-{
-	border-radius: 10px; 
-	height: 20em;
-	margin: 0 auto;
-	overflow: hidden;
-	width: 75%;
-}
-header #titulos h1
-{
-	background: #F08E3C;
-	color: white;
-	left: 7em;
-	opacity: .8;
-	padding: 1.5em 2em;
-	position: absolute;
-	top: 5em;
-	width: 15%;
-}
-header #titulos h3
-{
-	background: #999;
-	color: #222;
-	left: 17em;
-	opacity: .8;
-	padding: 1em 1.5em;
-	position: absolute;
-	top: 16em;
-	width: 15%;
-}
-header #titulos #img-principal img
-{	
-	display: block;
-	opacity: .8;
-	width: 100%;
-}*/
